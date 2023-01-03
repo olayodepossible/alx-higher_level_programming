@@ -1,5 +1,3 @@
-
-
 #!/usr/bin/python3
 """
 Defines a class Rectangle with private attribute width and height,
