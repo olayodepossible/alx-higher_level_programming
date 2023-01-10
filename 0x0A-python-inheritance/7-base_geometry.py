@@ -3,25 +3,22 @@
 Contains BaseGeometry
 with public instance method area and integer_validation
 """
-
-
 class BaseGeometry:
-    """
-    Methods:
-        area(self)
-        integer_validator(self, name, value)
-    """
+    """ Class that defines the attributes of Geometric Shapes """
+
     def area(self):
-        """not implemented"""
+        """ Method that defines the area of a geomtric shape """
+
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """validates input
-        Args:
-            name (str): assumed always a string
-            value (int): greater than 0
+        """ Method that recieves the value property
+        Árgs:
+            name: name of the object
+            value: value of the property
         """
-        if not isinstance(value, int):
-            raise TypeError("{:s} must be an integer".format(name))
+
+        if type(value) is not int:
+            raise TypeError("{} must be an integer".format(name))
         if value <= 0:
-            raise ValueError("{:s} must be greater than 0".format(name))
+            raise ValueError("{} must be greater than 0".format(name))
