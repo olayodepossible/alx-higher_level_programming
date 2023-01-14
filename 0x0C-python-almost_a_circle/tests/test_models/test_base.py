@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+
 """
 Defines unittests for base.py.
 # run with python3 -m unittest discover tests
 # run with python3 -m unittest tests/test_models/test_base.py
 """
+
 import os
 import pep8
 import json
@@ -11,7 +13,6 @@ import unittest
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
-
 
 class TestPep8(unittest.TestCase):
     """Pep8 models/base.py & tests/test_models/test_base.py"""
