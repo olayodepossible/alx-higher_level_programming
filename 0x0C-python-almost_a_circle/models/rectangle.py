@@ -107,7 +107,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """
-        If args: set attributes in this order: id, width, height, x, y
+        If there is value in args: attributes should be in this order: id, width, height, x, y
         If no args given: set attributes according to kwargs
         """
         if args:
