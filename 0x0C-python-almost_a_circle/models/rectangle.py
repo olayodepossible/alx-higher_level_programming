@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-"""
-Contains class Rectangle
-"""
 
 
 from models.base import Base
