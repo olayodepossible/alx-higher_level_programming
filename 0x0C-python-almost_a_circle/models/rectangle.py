@@ -48,7 +48,7 @@ class Rectangle(Base):
         """get y"""
         return self.__y
 
-		"""create setters with validation """
+		"""create setters with validation"""
 
     @width.setter
     def width(self, value):
