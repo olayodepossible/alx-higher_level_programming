@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
-
 from models.base import Base
-
 
 class Rectangle(Base):
     """
@@ -49,6 +47,8 @@ class Rectangle(Base):
     def y(self):
         """get y"""
         return self.__y
+
+		"""create setters with validation """
 
     @width.setter
     def width(self, value):
