@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 Inherits from Rectangle;
 Inits superclass' id, width (as size), height (as size), x, y
@@ -13,6 +14,7 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
+
     """
     defines class Square; inherits from class Rectangle
     Inherited Attributes:
