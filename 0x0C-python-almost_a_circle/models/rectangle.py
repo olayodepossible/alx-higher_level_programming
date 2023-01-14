@@ -123,17 +123,17 @@ class Rectangle(Base):
                 else:
                     self.y = value
         else:
-            for k, v in kwargs.items():
-                if k == "id":
-                    self.id = v
-                if k == "width":
-                    self.width = v
-                if k == "height":
-                    self.height = v
-                if k == "x":
-                    self.x = v
-                if k == "y":
-                    self.y = v
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                if key == "width":
+                    self.width = value
+                if key == "height":
+                    self.height = value
+                if key == "x":
+                    self.x = value
+                if key == "y":
+                    self.y = value
 
     def to_dictionary(self):
         """Return dictionary representation"""
