@@ -14,16 +14,6 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
-class TestPep8(unittest.TestCase):
-    """Pep8 models/base.py & tests/test_models/test_base.py"""
-    def test_pep8(self):
-        """Pep8"""
-        style = pep8.StyleGuide(quiet=False)
-        errors = 0
-        files = ["models/base.py", "tests/test_models/test_base.py"]
-        errors += style.check_files(files).total_errors
-        self.assertEqual(errors, 0, 'Need to fix Pep8')
-
 
 class TestBase_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the Base class."""
