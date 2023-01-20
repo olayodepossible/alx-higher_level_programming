@@ -9,6 +9,7 @@ import json
 import csv
 import turtle
 
+
 class Base:
 
     """
@@ -42,7 +43,7 @@ class Base:
         """Returns JSON string representation of list dict"""
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
-        return json.dumps(list_dictionaries)
+        return json.dumps(list_dictionaries, indent=4)
 
     @staticmethod
     def from_json_string(json_string):
@@ -93,7 +94,8 @@ class Base:
             writer = csv.writer(f)
             for obj in list_objs:
                 if cls.__name__ == "Rectangle":
-                    writer.writerow([obj.id, obj.width, obj.height, obj.x, obj.y])
+                    writer.writerow(
+                       [obj.id, obj.width, obj.height, obj.x, obj.y])
                 if cls.__name__ == "Square":
                     writer.writerow([obj.id, obj.size, obj.x, obj.y])
 

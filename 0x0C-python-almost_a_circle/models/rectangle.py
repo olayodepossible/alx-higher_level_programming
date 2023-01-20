@@ -1,8 +1,13 @@
 #!/usr/bin/python3
+"""
+Defines a class Rectangle
+"""
 
 from models.base import Base
 
+
 class Rectangle(Base):
+
     """
     defines class Rectangle; inherits from class Base
     Inherited Attributes:
@@ -20,6 +25,7 @@ class Rectangle(Base):
         area(self)       display(self)
         __str__          to_dictionary(self)
     """
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize rectangle"""
         super().__init__(id)
@@ -47,7 +53,6 @@ class Rectangle(Base):
     def y(self):
         """get y"""
         return self.__y
-
 
     @width.setter
     def width(self, value):
@@ -106,7 +111,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """
-        If there is value in args: attributes should be in this order: id, width, height, x, y
+        the value in args: should be in this order: id, width, height, x, y
         If no args given: set attributes according to kwargs
         """
         if args:
